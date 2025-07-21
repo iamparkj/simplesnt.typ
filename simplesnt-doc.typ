@@ -2,7 +2,7 @@
 #import "@preview/curryst:0.5.1": rule, prooftree
 #import "@preview/polylux:0.4.0": *
 
-#import "metropolis.typ": (
+#import "simplesnt.typ": (
   slide,
   title-slide,
   new-section-slide,
