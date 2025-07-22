@@ -16,10 +16,15 @@
 )
 
 #show raw: text.with(size: 0.9em)
-#show link: underline
 #show footnote.entry: set text(size: 0.8em)
 
-// in Korean paragraphs, recommend to use:
+#show link: text.with(
+  font: "JetBrainsMonoHangul Nerd Font Mono",
+  size: 0.9em,
+)
+#show link: underline
+
+// in Korean paragraphs, it is recommended to use:
 // #set par(leading: 1.3em, justify: true)
 
 #let kopub(body) = {
@@ -87,7 +92,7 @@
 #new-section-slide("Prerequisites")
 
 #slide(title: "Typst")[
-  You are expected to use Typst whose version is 0.13.0 or later.
+  You are expected to use Typst 0.13.0 or later.
 
   You can use this template on the web app#footnote[https://typst.app]
   or your local environment#footnote[https://github.com/typst/typst].
@@ -102,20 +107,43 @@
     indent: 1em,
     spacing: 0.9em,
 
-    [ #kopub[KoPubWorldDotum_Pro] ],
-    [ #jbmono[JetBrainsMonoHangul NF Mono] ],
+    [ #kopub[KoPubWorldDotum_Pro]
+      #footnote[https://github.com/adrinerDP/font-kopubworld]
+    ],
+
+    [ #jbmono[JetBrainsMonoHangul NF Mono]
+      #footnote[https://github.com/Jhyub/JetBrainsMonoHangul]
+    ],
   )
 
-  If you set `set-hangul` parameter to `false`, \
+  If you set the `set-hangul` parameter to `false`, \
   the template will not load custom Korean fonts.
 ]
 
-#slide(title: "Usage")[
-  If you are in your local Typst, \
-  just compile with `metropolis.typ` and `lib.typ` file:
+#slide(title: "Usage (1/2)")[
+  1. Import and configure the template at the top of `main.typ`:
+
+  ```typst
+    #import "@preview/polylux:0.4.0": *
+
+    #import "simplesnt.typ": (
+      slide, title-slide, new-section-slide,
+      focus-slide, setup,
+    )
+
+    #show: setup.with(
+      aspect-ratio: "16-9", // or "4-3"
+      set-hangul: true,     // or false
+    )
+  ```
+]
+
+#slide(title: "Usage (2/2)")[
+  2. Then, compile it with `simplesnt.typ` file. \
+     If you are in a local environment, run:
 
   ```sh
-  typst c main.typ
+    typst c main.typ
   ```
 ]
 
@@ -149,7 +177,7 @@
   Use `curryst`, e.g.,
 
   ```typst
-  #import "@preview/curryst:0.5.1": *
+  #import "@preview/curryst:0.5.1": rule, prooftree
   ```
 
   #v(5%)
