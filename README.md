@@ -21,3 +21,9 @@ This is a sister template of [Zeta611/simplesnt](https://github.com/Zeta611/simp
 ## 📝 Documentation
 
 See [the documentation](https://github.com/iamparkj/simplesnt.typ/blob/main/simplesnt-doc.pdf).
+
+
+## 🔗 See Also
+
+- [Polylux Book](https://polylux.dev/book)
+- [Zeta611/simplesnt](https://github.com/Zeta611/simplesnt)
