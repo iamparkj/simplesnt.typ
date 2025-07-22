@@ -1,8 +1,11 @@
 <div align="center">
+  <a href="https://github.com/iamparkj/simplesnt.typ">
+    <img width=100 src="https://raw.githubusercontent.com/polylux-typ/polylux/ed1e70e74f2a525e80ace9144249c9537917731c/assets/polylux-logo.svg"/>
+  </a>
   <h1> simpleSnT.typ </h1>
-  <p align="center">
+  <a href="https://typst.app">
     <img src="https://img.shields.io/badge/typst-4D9BAB?style=for-the-badge&logo=typst&logoColor=white"/>
-  </p>
+  </a>
 </div>
 <br></br>
 
