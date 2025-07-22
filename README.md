@@ -10,7 +10,7 @@
 <br></br>
 
 
-## About
+## 📽️ About
 
 **simpleSnT.typ** is a template for creating ROPAS Show and Tell slides with Typst and [Polylux](https://github.com/polylux-typ/polylux).
 It is based on [Metropolis](https://github.com/polylux-typ/metropolis) theme.
@@ -18,6 +18,6 @@ It is based on [Metropolis](https://github.com/polylux-typ/metropolis) theme.
 This is a sister template of [Zeta611/simplesnt](https://github.com/Zeta611/simplesnt), a LaTeX beamer class.
 
 
-## Documentation
+## 📝 Documentation
 
 See [the documentation](https://github.com/iamparkj/simplesnt.typ/blob/main/simplesnt-doc.pdf).
